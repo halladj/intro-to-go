@@ -34,7 +34,7 @@ func EncryptionHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	var m *http.ServeMux = http.NewServeMux()
 
-	m.HandleFunc("/ecrypt", EncryptionHandler)
+	m.HandleFunc("/encrypt", EncryptionHandler)
 	// TODO Add new route called << decrypt>>
 	//      and associate it with DecryptionHandler
 
